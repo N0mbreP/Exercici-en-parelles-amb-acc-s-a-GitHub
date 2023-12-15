@@ -3,6 +3,7 @@ import java.util.*
 fun precioActual(preuCoche:Int, km:Int):Float{
     var preuCF:Float=preuCoche.toFloat()
     var resultat:Float=0.99999f*preuCF.toFloat()
+    resultat*=km.toFloat()
     return resultat
 }
 
