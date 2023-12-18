@@ -22,3 +22,15 @@ fun menu(textoMenu:String):Int{
     }while (!valorCorrecte)
     return numeroLlegit
 }
+
+fun preuNeumatics(km:Double, preuCoche: Double):Double{
+    var preuFinal:Double=preuCoche
+    if (km<5000){
+        return preuFinal
+    }else if(km>10000){
+        preuFinal-=200
+        return preuFinal
+    }
+    preuFinal-=300
+    return preuFinal
+}

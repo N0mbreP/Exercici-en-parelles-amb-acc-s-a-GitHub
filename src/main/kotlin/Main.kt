@@ -36,8 +36,11 @@ fun main() {
         }
 
     } while (model != 1 && model != 2)
+    var kmD:Double=km.toDouble()
+    var preu:Double=preufinal.toDouble()
+    preu=preuNeumatics(km=kmD, preuCoche = preu)
 
-    println("El preu final tenint en compte que el vehicle te $km, és de $preufinal€")
+    println("El preu final tenint en compte que el vehicle te $km, és de $preu€")
 
 }
 
